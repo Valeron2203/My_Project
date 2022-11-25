@@ -149,18 +149,19 @@
     </address>
     </footer>
     <section class="modal-window">
-        <button class="close">X</button>
-        <form action="#"></form>
-        <h3>Залиште свої дані, ми вам передзвонимо</h3>
-        <p>Ім'я</p>
-        <input tabindex="1" type="text">
-        <p>Телефон</p>
-        <input type="tel">
-        <p>Пошта</p>
-        <input type="text">
-        <p>Коментар</p>
-        <textarea name="Введіть свій коментар" id="" cols="30" rows="10"></textarea>
-        <p><input tabindex="5" checked type="checkbox" name="Consent" value="yes">Погоджуюся з розсилкою та приймаю Умови договору</p>
+        <button class="close">Х</button>
+        <h3 class="form-title">Залиште свої дані, ми вам передзвонимо</h3>
+        <form class="data-form" action="#">
+        <p class="text-form-name">Ім'я</p>
+        <input tabindex="1" type="text" class="input-form-name">
+        <p class="text-form-phone">Телефон</p>
+        <input tabindex="2" type="tel" class="input-form-phone">
+        <p class="text-form-mail">Пошта</p>
+        <input tabindex="3" type="text" class="input-form-mail"> </form>
+        <p class="text-form-coments">Коментар</p>
+        <textarea name="Введіть свій коментар" id="" cols="30" rows="10" class="coments" placeholder="Введіть текст"></textarea>
+        <p class="text-form-check"><input tabindex="4" type="checkbox" name="Consent" value="yes">Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a></p>
+        <button class="modal-btn">Відправити</button>
     </section>
     </body>
 </html>
