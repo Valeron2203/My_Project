@@ -1025,3 +1025,137 @@ background-color: var(--brand-color-background);
 
 }
 
+.modal-window {
+ position: absolute;
+width: 528px;
+height: 581px;
+left: 536px;
+top: 221px;
+background-color: var(--brand-background-team);
+justify-content: center;
+align-items: center;
+}
+
+.data-form {
+    position: absolute;
+width: 448px;
+height: 342px;
+top: 75px;
+left: 40px;
+}
+
+.form-title {
+width: 448px;
+height: 23px;
+left: 40px;
+top: 40px;
+font-size: 20px;
+line-height: 1.15px;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--brand-color);
+}
+
+.text-form-name, .text-form-phone, .text-form-mail, .text-form-coments, .text-form-check {
+    position: absolute;
+    width: 58px;
+    height: 14px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 1.66;
+letter-spacing: 0.01em;
+color: var(--brand-color-description);
+}
+
+.input-form-name, .input-form-phone, .input-form-mail {
+    position: absolute;
+    box-sizing: border-box;
+    width: 448px;
+    height: 40px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+cursor: pointer;
+}
+
+.input-form-name {
+    top: 30px;
+}
+
+.input-form-phone {
+    top: 98px;
+}
+
+.input-form-mail {
+    top: 166px;
+}
+
+.text-form-phone {
+   top: 68px; 
+}
+
+.text-form-mail {
+    top: 138px;
+}
+
+.text-form-coments {
+    top: 278px;
+    left: 40px;
+}
+
+.text-form-check {
+width: 425px;
+height: 24px;
+    top: 438px;
+    left: 40px;
+}
+
+.coments {
+box-sizing: border-box;
+position: absolute;
+width: 448px;
+height: 120px;
+top: 308px;
+left: 40px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+}
+
+.close {
+position: absolute;
+width: 20px;
+height: 20px;
+left: 496px;
+top: 14px;
+border: none;
+border-radius: 15px;
+cursor: pointer;
+}
+
+.form-title {
+position: absolute;
+width: 448px;
+height: 23px;
+left: 40px;
+top: 40px;
+}
+
+.modal-btn {
+    position: absolute;
+    width: 216px;
+    height: 50px;
+    left: 164px;
+    top: 492px;
+    font-family: 'Roboto';
+font-weight: 700;
+font-size: 16px;
+line-height: 1.87;
+letter-spacing: 0.06em;
+color: var(--brand-color-button);
+cursor: pointer;
+background-color: var(--brand-color-part-one);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border: none;
+border-radius: 4px;
+}
