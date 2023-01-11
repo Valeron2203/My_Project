@@ -16,22 +16,47 @@ body {
         letter-spacing: 0.03em;
     color:var(--brand-color);
     position: relative;
-width: auto;
-height: auto;
+}
 
+.wrapper {
+    max-width: 1600px;
+}
+
+
+@media (max-width: 1440px){
+    .wrapper { 
+        max-width: 970px;
+    }
+}
+
+@media (max-width: 992px){
+    .wrapper {
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 767px){
+    .wrapper {
+        max-width: 440px;
+    }
+}
+
+@media (max-width: 480px){
+    .wrapper {
+        max-width: none;
+    }
 }
 
 .widget {
+    width: 100%;
     display: flex;
 flex-direction: row;
-width: 1600px;
 height: 80px;
 }
 
 .project-name {
    
     position: absolute;
-    width: 145px;
     height: 31px;
     left: 200px;
     top: 12px;
@@ -141,7 +166,6 @@ text-decoration: none;
 .email {
     position: absolute;
     align-items: center;
-    width: 161px;
     height: 16px;
     margin-top: 32px;
     margin-bottom: 24px;
@@ -165,7 +189,6 @@ color:var(--brand-color-description);
 
 .phone {
     position: absolute;
-    width: 161px;
     height: 16px;
     margin-top: 32px;
     margin-bottom: 32px;
@@ -210,7 +233,7 @@ fill:var(--brand-color-description);
 
 .service {
     position: absolute;
-    width: 1600px;
+    width: 100%;
     height: 600px;
     left: 0px;
     top: 80px;
@@ -223,6 +246,7 @@ fill:var(--brand-color-description);
 
 
 .title {
+width: 100%;
 text-align: center;
 margin-top: 200px;
 margin-bottom: 280px;
@@ -236,8 +260,8 @@ color: var(--brand-color-button);
 
 .btn {
     position: absolute;
-    width: 216px;
     height: 50px;
+    width: 20%;
     left: 692px;
     top: 430px;
     font-family: 'Roboto';
@@ -278,7 +302,6 @@ border-radius: 4px;
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
-    width: 1px;
     height: 1px;
     overflow: hidden;
     border: 0;
@@ -296,13 +319,12 @@ border-radius: 4px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 270px;
     height: 120px;
     background-color: var(--brand-color-btn-portfolio);
 }
 
-.beep {
-    width: 70px;
+.icon {
+    width: 100%;
     height: 70px;
     padding-top: 25px;    
 }
@@ -313,26 +335,18 @@ border-radius: 4px;
 .feature-item-one {
 list-style: none; 
 position: absolute;
-width: 270px;
+width: 670%;
 height: 248px;
 left: 215px;
 top: 724px;
 
 }
 
- 
-
-.clock {
-padding: 25px;
-width: 70px;
-height: 70px;
-}
-
 .feature-item-two
 {
     list-style: none;
     position: absolute;
-width: 270px;
+    width: 670%;
 height: 224px;
 left: 515px;
 top: 724px;
@@ -341,32 +355,20 @@ top: 724px;
 .feature-item-three {
 list-style: none;
 position: absolute;
-width: 270px;
+width: 670%;
 height: 74px;
 left: 815px;
 top: 724px;
 }
 
-.diagram {
-        padding-top: 25px;
-        width: 70px;
-        height: 70px;
-}
-
 .feature-item-four {
 list-style: none;
 position: absolute;
-width: 270px;
+width: 670%;
 height: 98px;
 left: 1115px;
 top: 724px;
 
-}
-
-.astronaut {
-    padding-top: 25px;
-    width: 70px;
-    height: 70px;
 }
 
 .work {
@@ -385,6 +387,10 @@ color:var(--brand-color);
     display: flex;
     flex-direction: row;
     
+}
+
+.photo-member {
+    width: 100%;
 }
 
 
@@ -430,7 +436,7 @@ color:var(--brand-color-description);
 .Team-section {
     display: inline-block;
     position: absolute;
-width: 1600px;
+width: 100%;
 height: 708px;
 left: 0px;
 top: 1596px;
@@ -449,7 +455,7 @@ color:var(--brand-color);
 
 .team-list-one {
     position: absolute;
-    width: 270px;
+    width: 16%;
     height: 428px;
     padding-top: 50px;
     margin-left: 215px;
@@ -467,13 +473,11 @@ color:var(--brand-color);
     position: absolute;
     padding-top: 16px;
     margin-left: 22px;
-    width: 44px;
     height: 44px;
         }
 
     .instagram-icon, .meta-icon, .twitter-icon, .linkedin-icon  {
         position: absolute;
-        width: 20px;
         height: 20px;
         
         
@@ -489,7 +493,7 @@ color:var(--brand-color);
 
 .team-list-two {
 position: absolute;
-width: 270px;
+width: 16%;
 height: 428px;
 margin-left: 515px;
 padding-top: 50px;
@@ -501,14 +505,13 @@ background-color: var(--brand-color-button);
     position: absolute;
     padding-top: 16px;
     margin-left: 66px;
-    width: 44px;
     height: 44px;
     }
 
    
 .team-list-three {
     position: absolute;
-    width: 270px;
+    width: 16%;
     height: 428px;
     padding-top: 50px;
     margin-left: 815px;
@@ -520,13 +523,12 @@ background-color: var(--brand-color-button);
     position: absolute;
     padding-top: 16px;
     margin-left: 108px;
-    width: 44px;
     height: 44px;
 }
 
 .team-list-four {
     position: absolute;
-    width: 270px;
+    width: 16%;
     height: 428px;
     padding-top: 50px;
     margin-left: 1115px;
@@ -538,7 +540,6 @@ background-color: var(--brand-color-button);
     position: absolute;
     padding-top: 16px;
     margin-left: 150px;
-    width: 44px;
     height: 44px;
 }
 
@@ -566,7 +567,7 @@ color:var(--brand-color-description);
     display: flex;
     flex-direction: column;
     position: absolute;
-    width: 1170px;
+    width: 75%;
 height: 184px;
 left: 215px;
 top: 2398px;
@@ -595,7 +596,7 @@ color: var(--brand-color);
 .list-logo-item-ya {
     box-sizing: border-box;
     position: absolute;
-    width: 170px;
+    width: 13.5%;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -608,13 +609,13 @@ color: var(--brand-color);
     }
 
     .ya-logo, .tegline, .company, .petters, .company-teg-line  {
-width: 100px;
+width: 60%;
 margin-top: 23px;
 margin-left: 35px;
     }
     
    .brand {
-    width: 60px;
+    width: 40%;
 margin-top: 23px;
 margin-left: 55px;
    }
@@ -626,7 +627,7 @@ background-color: var(--brand-color-btn-hover);
     .list-logo-item-tegline {
         box-sizing: border-box;
         position: absolute;
-        width: 170px;
+        width: 13.5%;
         height: 92px;
         border: 1px solid #AFB1B8;
         border-radius: 4px;
@@ -638,7 +639,7 @@ background-color: var(--brand-color-btn-hover);
     .list-logo-item-company {
         box-sizing: border-box;
         position: absolute;
-        width: 170px;
+        width: 13.5%;
         height: 92px;
         border: 1px solid #AFB1B8;
         border-radius: 4px;
@@ -649,7 +650,7 @@ background-color: var(--brand-color-btn-hover);
     .list-logo-item-petters {
         box-sizing: border-box;
         position: absolute;
-        width: 170px;
+        width: 13.5%;
         height: 92px;
         border: 1px solid #AFB1B8;
         border-radius: 4px;
@@ -660,7 +661,7 @@ background-color: var(--brand-color-btn-hover);
     .list-logo-item-brand {
         box-sizing: border-box;
         position: absolute;
-        width: 170px;
+        width: 13.5%;
         height: 92px;
         border: 1px solid #AFB1B8;
         border-radius: 4px;
@@ -671,7 +672,7 @@ background-color: var(--brand-color-btn-hover);
     .list-logo-item-company-teg-line {
         box-sizing: border-box;
         position: absolute;
-        width: 170px;
+        width: 13.5%;
         height: 92px;
         border: 1px solid #AFB1B8;
         border-radius: 4px;
@@ -685,7 +686,7 @@ background-color: var(--brand-color-btn-hover);
 .footer-page {
  display: inline-block;
 position: absolute;
- width: 1600px;
+ width: 100%;
 height: 252px;
 left: 0px;
 top: 2770px;
@@ -735,7 +736,6 @@ color:var(--brand-background-team);
 
    .list-footer-title {
     position: absolute;
-width: 116px;
 height: 16px;
 left: 516px;
 top: 70px;
@@ -755,7 +755,7 @@ color: var(--brand-background-team);
    }
 
    .instagram-items, .twitter-items, .meta-items, .linkedin-items {
-    width: 22px;
+    
     height: 22px;
    }  
 
@@ -764,8 +764,6 @@ color: var(--brand-background-team);
     left: 528px;
     top: 113px;
    }
-   
-  
 
    .twitter-footer {
     position: absolute;
@@ -783,9 +781,7 @@ color: var(--brand-background-team);
     position: absolute;
     top: 111px;
     left: 608px;
-   }
-
-   
+   } 
 
    .twitter-footer-icon, .instagram-footer-icon, .meta-footer-icon, .linkedin-footer-icon {
     fill: #AFB1B8;
@@ -794,7 +790,6 @@ color: var(--brand-background-team);
    .twitter-link:hover .twitter-footer-icon, .instagram-link:hover .instagram-footer-icon, .meta-link:hover .meta-footer-icon, .linkedin-link:hover .linkedin-footer-icon  {
     fill: var(--brand-color-btn-hover);
    }
-
      
 .address-list {
     list-style: none;
@@ -1071,7 +1066,7 @@ background-color: var(--brand-color-background);
 
 .modal-window {
  position: absolute;
-width: 528px;
+width: 32%;
 height: 581px;
 left: 536px;
 top: 221px;
@@ -1082,15 +1077,15 @@ align-items: center;
 
 .data-form {
     position: absolute;
-width: 448px;
+width: 85%;
 height: 342px;
 top: 75px;
 left: 40px;
 }
 
 .form-title {
-width: 448px;
 height: 23px;
+width: 85%;
 left: 40px;
 top: 40px;
 font-size: 20px;
@@ -1116,7 +1111,7 @@ color: var(--brand-color-description);
 .input-form-name, .input-form-phone, .input-form-mail {
     position: absolute;
     box-sizing: border-box;
-    width: 448px;
+    width: 100%;
     height: 40px;
         border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
@@ -1149,7 +1144,7 @@ cursor: pointer;
 }
 
 .text-form-check {
-width: 425px;
+width: 100%;
 height: 24px;
     top: 438px;
     left: 40px;
@@ -1158,7 +1153,7 @@ height: 24px;
 .coments {
 box-sizing: border-box;
 position: absolute;
-width: 448px;
+width: 85%;
 height: 120px;
 top: 308px;
 left: 40px;
@@ -1168,7 +1163,6 @@ border-radius: 4px;
 
 .close {
 position: absolute;
-width: 20px;
 height: 20px;
 left: 496px;
 top: 14px;
@@ -1179,7 +1173,6 @@ cursor: pointer;
 
 .form-title {
 position: absolute;
-width: 448px;
 height: 23px;
 left: 40px;
 top: 40px;
@@ -1187,7 +1180,7 @@ top: 40px;
 
 .modal-btn {
     position: absolute;
-    width: 216px;
+    width: 40%;
     height: 50px;
     left: 164px;
     top: 492px;
@@ -1206,15 +1199,14 @@ border-radius: 4px;
 
 .signup {
 position: absolute;
-width: 570px;
 height: 86px;
 top: 83px;
 left: 815px;
+width: 100%;
 }
 
 .signup-title {
 position: absolute;
-width: 207px;
 height: 16px;
 top: -15px;
 white-space: nowrap;
@@ -1231,7 +1223,7 @@ color: var(--brand-background-team);
 .input-signup {
 box-sizing: border-box;
 position: absolute;
-width: 358px;
+width: 21%;
 height: 50px;
 left: 0px;
 top: 20px;
@@ -1251,7 +1243,7 @@ background-color: var(--brand-color-background)
 
 .signup-button {
     position: absolute;
-width: 200px;
+width: 12%;
 height: 50px;
 top: 20px;
 left: 370px;
